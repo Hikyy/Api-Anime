@@ -76,3 +76,24 @@
     }
 
     ///////////////////////////
+
+    public function save(Request $request)
+    {
+         $request->validate([
+
+            'Image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
+        ]);
+
+        $imageName = time().'.'.$request->Image->getClientOriginalName();  
+
+        $request->Image->storeAs('images', $imageName);
+
+        Product::create([
+            'title' => request('title'),
+            'Synopsis' => request('Synopsis'),
+            'Score' => request('Score'),
+            'Image' => $imageName,
+        ]);
+        return redirect('file');
+    }

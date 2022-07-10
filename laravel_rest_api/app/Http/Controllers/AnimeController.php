@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\Models\Product;
 use App\Http\Resources\AnimeResource;
 use Illuminate\Support\Facades\Mail;
+use App\Http\Requests\AnimeCheckGood;
 
 // Voir le fichier AllController.php, j'y ai mis plusieurs variante de Controller.
 
@@ -32,9 +33,10 @@ class AnimeController extends Controller
     }
 
 
-    public function addAnime(Request $request)
+    public function addAnime(AnimeCheckGood $request)
     {
-        $An = $request->all();
+
+        $request->validated();
         $An_flip = $request->all();
 
        $Array = array_flip(['title', 'Synopsis', 'Score', 'Image']);
@@ -48,15 +50,13 @@ class AnimeController extends Controller
     }
 
 
-    public function updateAnime(Request $request, $id)
+    public function updateAnime(AnimeCheckGood $request, $id)
     {
+        $request->validated();
         $Anime = Product::find($id);
-        echo $Anime;
+
         if(is_null($Anime)){
             return response()->json(['message' => 'Produit Introuvable'], 404);
-        }
-        if(is_null($id)){
-            return response()->json(['message' => 'Veuillez entrer un identifiant'], 404);
         }
 
         $Anime->update($request->all());
@@ -74,29 +74,21 @@ class AnimeController extends Controller
         return response()->json(['message' => 'Anime Delete'], 200);
     }
 
-    public function save(Request $request)
+    public function save(AnimeCheckGood $request)
     {
-        $request->validate([
-
-            'Image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-
-        ]);
+        $request->validated();
 
         $imageName = time().'.'.$request->Image->getClientOriginalName();  
 
         $request->Image->storeAs('images', $imageName);
-        var_dump($imageName);
-
 
         Product::create([
             'title' => request('title'),
             'Synopsis' => request('Synopsis'),
             'Score' => request('Score'),
-            'title' => request('title'),
             'Image' => $imageName,
         ]);
-        echo $request;
-
+        return redirect('file');
     }
 
 }
