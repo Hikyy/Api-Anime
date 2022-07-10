@@ -1,5 +1,8 @@
 <?php
 
+    // Ce fichier présente les différentes methodes au niveau du controlleur que j'ai pu trouver au fil de mes recherche.
+    // Ce n'est pas un fichier à charger.
+
 ////////////////////////
 
     public function getAnime(){
@@ -41,3 +44,35 @@
             //Methode 2 :
             return response()->json($id);
     }
+
+    ////////////////////////////////
+
+    public function addAnime(Request $request){
+        $An = $request->all();
+        $An_flip = $request->all();
+
+       $Array = array_flip(['title', 'Synopsis', 'Score', 'Image']);
+
+        if(Count(array_intersect_key($Array, $An_flip)) < 4){
+            return response()->json(['message' => 'Clé Manquante'], 404);
+        }
+
+         $Anime = Product::create($request->all());
+        return response($Anime,201); 
+    }
+
+
+    public function addAnime(Request $request){
+        
+            $articles = Product::create([
+            'title' => request('title'),
+            'Synopsis' => request('Synopsis'),
+            'Score' => request('Score'),
+            'Image' => request('Image'),
+        ]); 
+
+
+        return response()->json($articles, 201);
+    }
+
+    ///////////////////////////

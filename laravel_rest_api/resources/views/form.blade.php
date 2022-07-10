@@ -9,15 +9,13 @@
 </head>
 <body translate="no">
   <div class="contact-us">
-  <form>
-    <input placeholder="title" required="" type="text">
-    <input placeholder="Synopsis" required="" type="text">
-    <input placeholder="Score" required="" type="text">
-    <div class="flex">
-    <label for="image">hi</label>
-    <input id="image" placeholder="Image" required="" type="file">
-    </div>
-    <button type="button">SIGN UP</button>
+  <form action="save" method="POST">
+    @csrf
+    <input class="input" name="title" placeholder="Titre" required="" type="text">
+    <input class="input" name="Synopsis" placeholder="Synopsis" required="" type="text">
+    <input class="input" name="Score" placeholder="Score" required="" type="text">
+    <input placeholder="Image" name="Image" required="" type="file">
+    <button type="submit">SIGN UP</button>
   </form>
 </div>
 </body>

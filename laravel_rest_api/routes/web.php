@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AnimeController;
+use App\Models\Product;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -26,4 +28,22 @@ Route::get('file', function () {
 Route::get('product',[AnimeController::class,'getAnime']);
 
 Route::get('product/{id}', [AnimeController::class,'bar']);
+
+Route::post('save', function(){
+Product::create([
+    'title' => request('title'),
+    'Synopsis' => request('Synopsis'),
+    'Score' => request('Score'),
+    'title' => request('title'),
+    'Image' => request('Image'),
+]);
+    return redirect('file');
+/* $data = new Product();
+$data->title = request('title');
+$data->Synopsis = request('Synopsis');
+$data->Score = request('Score');
+$data->Image = "blabla";
+$data->save(); */
+
+});
 

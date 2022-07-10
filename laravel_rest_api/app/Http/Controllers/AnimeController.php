@@ -14,31 +14,26 @@ class AnimeController extends Controller
 {
     //
 
-    public function getAnime(){
-        //return response()->json(Product::all(),200);
+    public function getAnime()
+    {
         return AnimeResource::collection(Product::all());
     }
 
-/*     public function getAnimeById($id){
-        $Anime = Product::find($id);
-        echo ;
-        if(is_null($Anime)){
-            return response()->json(['message' => 'Produit Introuvable'], 404);
-        }
-        return response()->json(Product::find($id),200);
-    } */
 
-    public function getAnimeById(Product $id){
+    public function getAnimeById(Product $id)
+    {
 
         if(is_null($id)){
             return response()->json(['message' => 'Produit Introuvable'], 404);
         }
-        Mail::to('mabroukr1997@gmail.com')->send(new TestMail());
+        Mail::to('mabroukr1997@gmail.com')->send(new TestMail()); 
 
         return new AnimeResource($id);
     }
 
-    public function addAnime(Request $request){
+
+    public function addAnime(Request $request)
+    {
         $An = $request->all();
         $An_flip = $request->all();
 
@@ -47,20 +42,14 @@ class AnimeController extends Controller
         if(Count(array_intersect_key($Array, $An_flip)) < 4){
             return response()->json(['message' => 'Clé Manquante'], 404);
         }
-        
- /*        $articles = Product::create([
-            'title' => request('title'),
-            'Synopsis' => request('Synopsis'),
-            'Score' => request('Score'),
-            'Image' => request('Image'),
-        ]); */
 
          $Anime = Product::create($request->all());
         return response($Anime,201); 
-        //return response()->json($articles, 201);
     }
 
-    public function updateAnime(Request $request, $id){
+
+    public function updateAnime(Request $request, $id)
+    {
         $Anime = Product::find($id);
         echo $Anime;
         if(is_null($Anime)){
@@ -74,7 +63,8 @@ class AnimeController extends Controller
         return response($Anime,200);
     }
 
-    public function deleteAnime($id){
+    public function deleteAnime($id)
+    {
         $Anime = Product::find($id);
         if(is_null($Anime)){
             return response()->json(['message' => 'Produit Introuvable'], 404);
@@ -83,12 +73,5 @@ class AnimeController extends Controller
         
         return response()->json(['message' => 'Anime Delete'], 200);
     }
-
-    public function bar($id)
-    {
-
-
-    }
-
 
 }
