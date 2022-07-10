@@ -74,4 +74,29 @@ class AnimeController extends Controller
         return response()->json(['message' => 'Anime Delete'], 200);
     }
 
+    public function save(Request $request)
+    {
+        $request->validate([
+
+            'Image' => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+
+        ]);
+
+        $imageName = time().'.'.$request->Image->getClientOriginalName();  
+
+        $request->Image->storeAs('images', $imageName);
+        var_dump($imageName);
+
+
+        Product::create([
+            'title' => request('title'),
+            'Synopsis' => request('Synopsis'),
+            'Score' => request('Score'),
+            'title' => request('title'),
+            'Image' => $imageName,
+        ]);
+        echo $request;
+
+    }
+
 }

@@ -9,5 +9,5 @@ class Product extends Model
 {
     use HasFactory;
     public $timestamps = false;
-    protected $fillable = ["title", "Synopsis", "Score", "Image"];
+    protected $fillable = ["title", "Synopsis", "Score", "Image", "file_path"];
 }

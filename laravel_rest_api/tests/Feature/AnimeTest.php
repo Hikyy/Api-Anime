@@ -15,7 +15,7 @@ class AnimeTest extends TestCase
      *
      * @return void
      */
-    public function test_example()
+    public function test_AddAnime()
     {
         $data = [
             'title' => 'SAO',
@@ -26,15 +26,13 @@ class AnimeTest extends TestCase
 
 
         $response = $this->postJson('/api/addAnime', $data); 
-        $response
-            ->assertStatus(201);
+        $response->assertStatus(201);
 
     }
 
     public function test_getAllAnime(){
         $response = $this->getJson('/api/product'); 
-        dd(Product::all);
-        
+         
         $response->assertJsonStructure([
             'data' => [
                   '*' => [
@@ -48,12 +46,6 @@ class AnimeTest extends TestCase
          ]);
 
         
-    }
-
-    public function test_updateAnime(){
-
-
-        $response = $this -> patchJson('/api/product');
     }
 
 }
