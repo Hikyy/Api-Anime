@@ -42,7 +42,11 @@ Mais aussi, il n'y a aucune API au monde de Manga ou d'Anime qui soit totalement
  
  [Documentation sur l'installation de Composer pour Mamp](https://documentation.mamp.info/en/MAMP-PRO-Windows/How-Tos/General/SetupComposer/#:~:text=Install%20Composer&text=Click%20on%20the%20%E2%80%9CComposer-Setup,be%20guided%20through%20the%20installation)
  
- À la suite de cela faites : `composer -v`
+ À la suite de cela faites : `php -v` et `composer -v`
+ 
+ Si vous avez une erreur, disant que php n'est pas reconnu.
+ 
+ [Suivez ce Tutoriel](https://www.forevolve.com/en/articles/2016/10/27/how-to-add-your-php-runtime-directory-to-your-windows-10-path-environment-variable/)
  
  Si le terminal, affiche une erreur malgré que vous avez modifiez les 3 lignes dans le php.ini, suivez ce tutoriel : 
  
@@ -68,6 +72,8 @@ Mais aussi, il n'y a aucune API au monde de Manga ou d'Anime qui soit totalement
 Depuis le terminal ou depuis Mamp, 
 - Dans le dossier **laravel_rest_api**, appuyez sur la touche shift de votre clavier et puis faites un clique droit, ensuite sélectionner `Ouvrir dans le terminal`
 <img src="http://image.noelshack.com/fichiers/2022/28/1/1657493837-cmd-projet.png" width="550" >
+
+ À partir du terminal, faites : `composer create-project laravel/laravel example-app` 
 
  À partir du terminal, faites : `php artisan serve` 
  
