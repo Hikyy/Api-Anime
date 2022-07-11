@@ -76,9 +76,11 @@ Depuis le terminal ou depuis Mamp,
 | La dernière version du framework Laravel doit être utilisée      | ✔ |V_9.19.0 |
 | Les réponses de l’API doivent être renvoyées en JSON      | ✔      |    |
 | Les quatre verbes GET, POST, PATCH et DELETE doivent être utilisées | ✔      | <ul><li>**GET** :   /api/product</li><li>**GET** :  /api/product/`{id}`</li><li>**POST** :   /api/addAnime?title=`Exemple`&Synopsis=`Exemple`&Score=`Exemple`&Image=`Exemple`</li><li>**PATCH :**  /api/updateAnime/`{id}`?title=`Exemple`&Synopsis=`Exemple`&Score=`Exemple`&Image=`Exemple`</li><li>**DELETE :**  /api/deleteAnime/`{id}`</li></ul>  |
-| L’application doit contenir au moins un modèle, une migration, un contrôleur, une ressource API, un form request et un test | ✔      | <ul><li>**Modèle** : laravel_rest_api\App\Models\Product;</li><li>**Migration** : laravel_rest_api\database\migrations</li><li>**Contrôleur** : laravel_rest_api\App\Http\Controllers\AnimeController;</li><li>**Ressource API** : laravel_rest_api\App\Http\Resources\AnimeResource;</li><li>**Form Request** : laravel_rest_api\App\Http\Requests\AnimeCheckGood</li><li>**Test** : laravel_rest_api\test\Feature\AnimeTest</li></ul>   |
+| L’application doit contenir au moins un modèle, une migration, un contrôleur, une ressource API, un form request et un test | ✔      | <ul><li>**Modèle** : laravel_rest_api\App\Models\Product;</li><li>**Migration** : laravel_rest_api\database\migrations</li><li>**Contrôleur** : laravel_rest_api\App\Http\Controllers\AnimeController;</li><li>**Ressource API** : laravel_rest_api\App\Http\Resources\AnimeResource;</li><li>**Form Request** : laravel_rest_api\App\Http\Requests\AnimeCheckGood</li><li>**Test** : laravel_rest_api\test\Feature\AnimeTest;</li></ul>   |
 | Une notification déclenché par un évènement | ✔      |  <ul><li> laravel_rest_api\App\Mail\TestMail</li></ul>  |
 | Une commande Artisan (qui fait plus qu’imprimer du texte) |       |    |
-| La gestion d’un fichier uploadé (récupération et stockage) | ✔      |    |
+| La gestion d’un fichier uploadé (récupération et stockage) | ✔      | <ul><li>laravel_rest_api\App\Http\Controllers\AnimeController;</li></ul>   |
 | Une petite description succincte du sujet que vous traitez doit être présente dans un fichier README.md à la racine | ✔      |    |
 | L’application doit être entièrement fonctionnelle sans bug | ✔      |    |
+
+Pour upload un fichier, il faut aller sur un navigateur et ajouter dans l'url `/file`
