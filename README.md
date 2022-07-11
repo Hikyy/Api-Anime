@@ -69,19 +69,19 @@ Mais aussi, il n'y a aucune API au monde de Manga ou d'Anime qui soit totalement
 
 - Avoir lancer Mamp.
 
- Ensuite depuis le terminal ou de  [PhpMyAdmin](http://localhost/phpMyAdmin/), créer une Database laravel_api_rest_db et importer le fichier laravel_api_rest_db.sql qui se trouve dans le dossier Database du projet.
+- Ensuite depuis le terminal ou de  [PhpMyAdmin](http://localhost/phpMyAdmin/), créer une Database laravel_api_rest_db et importer le fichier laravel_api_rest_db.sql qui se trouve dans le dossier Database du projet.
 
-Depuis le terminal ou depuis Mamp, 
+
 - Dans le dossier **laravel_rest_api**, appuyez sur la touche shift de votre clavier et puis faites un clique droit, ensuite sélectionner `Ouvrir dans le terminal`
 <img src="http://image.noelshack.com/fichiers/2022/28/1/1657493837-cmd-projet.png" width="550" >
 
  À partir du terminal, faites : `composer create-project laravel/laravel example-app` 
  
- Tous les élements du dossier **laravel_rest_api** que vous avez télécharger sur github, copier les, ensuite coller les éléments dans le dossier du projet que vous venez de créer avec la commande composer.
+ - Tous les élements du dossier **laravel_rest_api** que vous avez télécharger sur github, copier les, ensuite coller les éléments dans le dossier du projet que vous venez de créer avec la commande composer.
 
  À partir du terminal, faites : `php artisan serve` 
  
- Pour les personnes qui utiliserai Postman, la configuration de l'api est disponible, il suffira d'aller dans le dossier Postman et d'importer le fichier `Api.postman_collection`.
+ - Pour les personnes qui utiliserai Postman, la configuration de l'api est disponible, il suffira d'aller dans le dossier Postman et d'importer le fichier `Api.postman_collection`.
  
  ## Consigne
  
