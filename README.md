@@ -36,13 +36,13 @@ Mais aussi, il n'y a aucune API au monde de Manga ou d'Anime qui soit totalement
     'extension=fileinfo'
     'extension=openssl'
 
- Il est nécessaire **d'installer Composer** pour exécuter le projet :
+ - Il est nécessaire **d'installer Composer** pour exécuter le projet :
  
  [Site Officiel pour télécharger Composer](https://getcomposer.org/download/)
  
  [Documentation sur l'installation de Composer pour Mamp](https://documentation.mamp.info/en/MAMP-PRO-Windows/How-Tos/General/SetupComposer/#:~:text=Install%20Composer&text=Click%20on%20the%20%E2%80%9CComposer-Setup,be%20guided%20through%20the%20installation)
  
- À la suite de cela faites : `php -v` et `composer -v`
+ - À la suite de cela faites : `php -v` et `composer -v`
  
  Si vous avez une erreur, disant que php n'est pas reconnu.
  
