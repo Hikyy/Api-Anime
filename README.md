@@ -75,11 +75,9 @@ Mais aussi, il n'y a aucune API au monde de Manga ou d'Anime qui soit totalement
 - Dans le dossier **laravel_rest_api**, appuyez sur la touche shift de votre clavier et puis faites un clique droit, ensuite sélectionner `Ouvrir dans le terminal`
 <img src="http://image.noelshack.com/fichiers/2022/28/1/1657493837-cmd-projet.png" width="550" >
 
- À partir du terminal, faites : `composer create-project laravel/laravel example-app` 
- 
- - Tous les élements du dossier **laravel_rest_api** que vous avez télécharger sur github, copier les, ensuite coller les éléments dans le dossier du projet que vous venez de créer avec la commande composer.
+ À partir du terminal, faites : `composer update`.
 
- À partir du terminal, faites : `php artisan serve` 
+ À partir du terminal, faites : `php artisan serve`.
  
  - Pour les personnes qui utiliserai Postman, la configuration de l'api est disponible, il suffira d'aller dans le dossier Postman et d'importer le fichier `Api.postman_collection`.
  
