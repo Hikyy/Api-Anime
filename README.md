@@ -69,6 +69,8 @@ Mais aussi, il n'y a aucune API au monde de Manga ou d'Anime qui soit totalement
 
 - Avoir lancer Mamp.
 
+ Ensuite depuis le terminal ou de  [PhpMyAdmin](http://localhost/phpMyAdmin/), créer une Database laravel_api_rest_db et importer le fichier laravel_api_rest_db.sql qui se trouve dans le dossier Database du projet.
+
 Depuis le terminal ou depuis Mamp, 
 - Dans le dossier **laravel_rest_api**, appuyez sur la touche shift de votre clavier et puis faites un clique droit, ensuite sélectionner `Ouvrir dans le terminal`
 <img src="http://image.noelshack.com/fichiers/2022/28/1/1657493837-cmd-projet.png" width="550" >
