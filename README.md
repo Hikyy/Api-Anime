@@ -18,7 +18,7 @@ Mais aussi, il n'y a aucune API au monde de Manga ou d'Anime qui soit totalement
 
 ## Pré-requis
 
-- Désactiver temporairement son Anti-virus, sinon l'envoie de mail ne s'effectuera pas.
+- Désactiver temporairement son Antivirus, sinon l'envoie de mail ne s'effectuera pas.
 
 - Téléchager le projet.
 
