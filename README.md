@@ -74,6 +74,8 @@ Depuis le terminal ou depuis Mamp,
 <img src="http://image.noelshack.com/fichiers/2022/28/1/1657493837-cmd-projet.png" width="550" >
 
  À partir du terminal, faites : `composer create-project laravel/laravel example-app` 
+ 
+ Tous les élements du projet que vous avez télécharger sur github, copier les, ensuite coller les éléments dans le dossier du projet que vous venez de crée avec la commande composer.
 
  À partir du terminal, faites : `php artisan serve` 
  
