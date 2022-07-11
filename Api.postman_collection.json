@@ -1,0 +1,159 @@
+{
+	"info": {
+		"_postman_id": "68d8a87b-a554-4bf2-addd-5f2651674f1f",
+		"name": "Api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21806174"
+	},
+	"item": [
+		{
+			"name": "Get all Anime",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/product",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get one Anime",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/product/2",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"product",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add new Anime",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/addAnime?title=&Synopsis=&Score=&Image=",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"addAnime"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": ""
+						},
+						{
+							"key": "Synopsis",
+							"value": ""
+						},
+						{
+							"key": "Score",
+							"value": ""
+						},
+						{
+							"key": "Image",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Anime",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/updateAnime/1000?title=&Synopsis=&Score=&Image=",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"updateAnime",
+						"1000"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": ""
+						},
+						{
+							"key": "Synopsis",
+							"value": ""
+						},
+						{
+							"key": "Score",
+							"value": ""
+						},
+						{
+							"key": "Image",
+							"value": ""
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Anime",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8000/api/deleteAnime/152",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"deleteAnime",
+						"152"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
