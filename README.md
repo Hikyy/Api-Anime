@@ -4,13 +4,17 @@
 
 ## Présentation
 
-A la demande de Tylto, j'ai crée cette Api.
+À la demande de Tylto, j'ai crée cette Api.
 
 Je remercie [@Victor_Gambert](https://fr.linkedin.com/in/victor-gambert-b5792759) d'avoir permis que je choissise le sujet !
 
 ### Pourquoi avoir choisis la thématique des Animés ?
 
 Il existe de nombreuses API d'Anime tel que : https://jikan.moe/ avec lequel j'ai effectué plusieurs projets, mais je n'ai pas trouvé une qui réponde à mes besoins, alors j'ai décidé d'en créer une sur les Animés.
+
+La France est le deuxiéme plus gros consommateur de Manga au monde, malheureusement il y'a pas d'API de Manga ou d'Anime en Français.
+
+Mais aussi, il n'y a aucune API au monde de Manga ou d'Anime qui soit totalement Open Source, ou qui permette à la communauté d'y participer.
 
 ## Pré-requis
 
@@ -84,5 +88,9 @@ Depuis le terminal ou depuis Mamp,
 | L’application doit être entièrement fonctionnelle sans bug | ✔      |    |
 
 Pour upload un fichier, il faut aller sur un navigateur et ajouter dans l'url `/file`.
+
+### PS : Ce projet est Open Source, n'hésitez pas à me contacter si vous voulez participez au projet d'une Api Française.
+
+<img src="https://giffiles.alphacoders.com/398/3987.gif">
 
 ###### Auteur : *Mabrouki Rayane*. 
