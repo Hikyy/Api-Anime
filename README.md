@@ -30,7 +30,7 @@ Mais aussi, il n'y a aucune API au monde de Manga ou d'Anime qui soit totalement
 <img src="http://image.noelshack.com/fichiers/2022/27/7/1657480974-cmd.png" width="450" >
 
 •   Modifier son fichier php.ini, il est dans le dossier C:\MAMP\conf\php8.1.0\
-    Dans ce fichier ci, il faut supprimer les commentaires ';' des ligne :
+    Dans ce fichier ci, il faut supprimer les commentaires ';' des lignes :
 
     'extension=pdo_mysql'
     'extension=fileinfo'
