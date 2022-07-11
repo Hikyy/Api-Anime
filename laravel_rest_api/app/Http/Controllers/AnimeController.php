@@ -27,7 +27,6 @@ class AnimeController extends Controller
         if(is_null($id)){
             return response()->json(['message' => 'Produit Introuvable'], 404);
         }
-        Mail::to('mabroukr1997@gmail.com')->send(new TestMail()); 
 
         return new AnimeResource($id);
     }
@@ -44,6 +43,7 @@ class AnimeController extends Controller
         if(Count(array_intersect_key($Array, $An_flip)) < 4){
             return response()->json(['message' => 'Clé Manquante'], 404);
         }
+        Mail::to('mabroukr1997@gmail.com')->send(new TestMail()); 
 
          $Anime = Product::create($request->all());
         return response($Anime,201); 
@@ -88,6 +88,9 @@ class AnimeController extends Controller
             'Score' => request('Score'),
             'Image' => $imageName,
         ]);
+
+        Mail::to('mabroukr1997@gmail.com')->send(new TestMail()); 
+
         return redirect('file');
     }
 
