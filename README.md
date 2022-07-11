@@ -76,6 +76,8 @@ Depuis le terminal ou depuis Mamp,
  À partir du terminal, faites : `composer create-project laravel/laravel example-app` 
  
  Tous les élements du dossier **laravel_rest_api** que vous avez télécharger sur github, copier les, ensuite coller les éléments dans le dossier du projet que vous venez de créer avec la commande composer.
+ 
+ Ensuite depuis le terminal ou de  [PhpMyAdmin](http://localhost/phpMyAdmin/), créer une Database laravel_api_rest_db et importer le fichier laravel_api_rest_db.sql qui se trouve dans le dossier Database du projet.
 
  À partir du terminal, faites : `php artisan serve` 
  
