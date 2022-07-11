@@ -83,4 +83,6 @@ Depuis le terminal ou depuis Mamp,
 | Une petite description succincte du sujet que vous traitez doit être présente dans un fichier README.md à la racine | ✔      |    |
 | L’application doit être entièrement fonctionnelle sans bug | ✔      |    |
 
-Pour upload un fichier, il faut aller sur un navigateur et ajouter dans l'url `/file`
+Pour upload un fichier, il faut aller sur un navigateur et ajouter dans l'url `/file`.
+
+###### Auteur : *Mabrouki Rayane*. 
