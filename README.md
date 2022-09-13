@@ -6,7 +6,7 @@
 
 À la demande de Tylto, j'ai crée cette Api.
 
-Je remercie [@Victor_Gambert](https://fr.linkedin.com/in/victor-gambert-b5792759) d'avoir permis que je choissise le sujet !
+Je remercie [@Victor_Gambert](https://fr.linkedin.com/in/victor-gambert-b5792759) d'avoir permis que je choisisse le sujet !
 
 ### Pourquoi avoir choisi la thématique des Animés ?
 
